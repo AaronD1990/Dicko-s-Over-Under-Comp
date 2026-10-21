@@ -1,0 +1,306 @@
+<!doctype html>
+<title>Over Under Comp</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap">
+<style>
+/* Layout: scoreboard on top (ranked list with a bar to 35), then one flat 30-team pick grid. A season dropdown beside the title switches between years. Cool slate neutrals, blue accent, green and red only for right and wrong. */
+:root{
+  --bg:#eef1f5; --surface:#ffffff; --ink:#142030; --muted:#5a6a7d; --line:#d7dee7;
+  --accent:#1f4fd8; --accent-soft:#e3eafc;
+  --good:#11704a; --good-bg:#dcf2e6; --bad:#a8231b; --bad-bg:#fbe2df;
+  --font-display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --font-body:"Barlow",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0e1520; --surface:#162130; --ink:#e7edf5; --muted:#98a8ba; --line:#28374a;
+    --accent:#7ea2ff; --accent-soft:#1d2d52;
+    --good:#52c993; --good-bg:#12392a; --bad:#ff8f86; --bad-bg:#421f1d;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0e1520; --surface:#162130; --ink:#e7edf5; --muted:#98a8ba; --line:#28374a;
+  --accent:#7ea2ff; --accent-soft:#1d2d52;
+  --good:#52c993; --good-bg:#12392a; --bad:#ff8f86; --bad-bg:#421f1d;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{
+  background:var(--bg); color:var(--ink); font-family:var(--font-body); font-size:15px; line-height:1.45;
+  padding-block:28px 40px;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));
+  padding-right:max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap{max-width:980px; margin:0 auto; display:flex; flex-direction:column; gap:22px}
+h1{font-family:var(--font-display); font-weight:700; font-size:2.4rem; line-height:1; letter-spacing:.01em; margin:0; text-wrap:balance}
+h2{font-family:var(--font-display); font-weight:600; font-size:1.05rem; letter-spacing:.09em; text-transform:uppercase; color:var(--muted); margin:0}
+.head{display:flex; flex-direction:column; gap:10px}
+.titlerow{display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-end; gap:12px}
+.season{display:flex; align-items:center; gap:8px}
+.season label{font-family:var(--font-display); font-weight:600; font-size:1rem; letter-spacing:.09em; text-transform:uppercase; color:var(--muted)}
+.season select{
+  font:inherit; font-weight:600; font-size:1rem; color:var(--ink); background-color:var(--surface);
+  border:1px solid var(--line); border-radius:8px; padding:7px 12px; cursor:pointer;
+}
+.season select:focus-visible{outline:2px solid var(--accent); outline-offset:1px}
+.sub{color:var(--muted); margin:0; max-width:62ch}
+.meta{display:flex; flex-wrap:wrap; gap:8px 14px; align-items:center; font-size:.85rem; color:var(--muted)}
+.pill{font-weight:600; font-size:.78rem; letter-spacing:.04em; text-transform:uppercase; padding:3px 9px; border-radius:999px; background:var(--accent-soft); color:var(--accent)}
+.panel{background:var(--surface); border:1px solid var(--line); border-radius:10px}
+.board{padding:6px 18px 10px; display:flex; flex-direction:column}
+.row{display:grid; grid-template-columns:2rem minmax(0,1fr) auto; column-gap:12px; align-items:baseline; padding:14px 0; border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.rank{font-family:var(--font-display); font-weight:700; font-size:1.7rem; color:var(--muted)}
+.name{font-family:var(--font-display); font-weight:700; font-size:1.6rem; line-height:1.1}
+.detail{grid-column:2 / 4; color:var(--muted); font-size:.86rem; margin-top:2px}
+.score{font-family:var(--font-display); font-weight:700; font-size:2rem; line-height:1; font-variant-numeric:tabular-nums; text-align:right}
+.score small{font-size:.95rem; color:var(--muted); font-weight:600}
+.bar{grid-column:2 / 4; height:6px; background:var(--accent-soft); border-radius:3px; margin-top:8px; overflow:hidden}
+.bar i{display:block; height:100%; background:var(--accent); border-radius:3px}
+.tools{display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:10px}
+.seg{display:inline-flex; border:1px solid var(--line); border-radius:8px; overflow:hidden; background:var(--surface)}
+.seg button{font:inherit; font-weight:600; font-size:.85rem; padding:7px 12px; border:0; background:transparent; color:var(--muted); cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--accent); color:#fff}
+.seg button:focus-visible{outline:2px solid var(--accent); outline-offset:-2px}
+.tablewrap{overflow-x:auto}
+table{border-collapse:collapse; width:100%; min-width:720px; font-variant-numeric:tabular-nums}
+th,td{padding:9px 12px; text-align:left; border-bottom:1px solid var(--line); white-space:nowrap}
+th{font-family:var(--font-display); font-weight:600; font-size:.9rem; letter-spacing:.07em; text-transform:uppercase; color:var(--muted); background:var(--surface)}
+tbody tr:last-child td{border-bottom:0}
+td.num, th.num{text-align:right}
+td.team{font-weight:600}
+.chip{display:inline-flex; align-items:center; gap:5px; font-weight:600; font-size:.8rem; padding:2px 8px; border-radius:5px}
+.chip.ok{background:var(--good-bg); color:var(--good)}
+.chip.bad{background:var(--bad-bg); color:var(--bad)}
+.chip.na{border:1px solid var(--line); color:var(--muted)}
+.lock{font-weight:700}
+.notes{color:var(--muted); font-size:.88rem; display:flex; flex-direction:column; gap:6px; max-width:78ch}
+.notes p{margin:0}
+@media (max-width:520px){ h1{font-size:2rem} .score{font-size:1.7rem} .name{font-size:1.4rem} }
+</style>
+
+<main class="wrap">
+  <header class="head">
+    <div class="titlerow">
+      <h1>Over Under Comp</h1>
+      <div class="season">
+        <label for="season">Season</label>
+        <select id="season"></select>
+      </div>
+    </div>
+    <p class="sub">NBA win totals, scored against each team's win total over 82 games.</p>
+    <div class="meta"><span class="pill" id="mode">Final results</span><span id="status">Loading</span></div>
+  </header>
+
+  <section aria-labelledby="lb">
+    <h2 id="lb" style="margin-bottom:10px">Leaderboard</h2>
+    <div class="panel board" id="board"></div>
+  </section>
+
+  <section aria-labelledby="gr" style="display:flex; flex-direction:column; gap:10px">
+    <div class="tools">
+      <h2 id="gr">Every pick, all 30 teams</h2>
+      <div class="seg" role="group" aria-label="Sort teams">
+        <button type="button" id="s-team" aria-pressed="true">A to Z</button>
+        <button type="button" id="s-margin" aria-pressed="false">Projected vs line</button>
+      </div>
+    </div>
+    <div class="panel tablewrap"><table id="grid"></table></div>
+  </section>
+
+  <section class="notes" aria-label="How scoring works">
+    <p>For a finished season the final win total is used. During a season, projected wins is the team's win percentage times 82, so the board moves as the standings change.</p>
+    <p id="live-note" hidden>Early in a season a few games swing the projections a lot, so the board will jump around until the standings settle. A team with no games played yet counts as no pick for everyone.</p>
+    <p>Each correct pick is 1 point, 30 available. Picks marked $ are sure things: the bonus is the share you got right, out of the number you marked, scaled to 5 points. Total is out of 35.</p>
+  </section>
+</main>
+
+<script>
+/* Newest season first. A season marked live reads its records from the standings feed; the others use final (each team's final win total). */
+let SEASONS = [];
+let cur = null;
+let live = null; /* standings document, used only when its season matches the selected one */
+let sortKey = "team";
+
+const $ = (id) => document.getElementById(id);
+const fmt = (n) => (Math.round(n * 10) / 10).toFixed(1);
+const signed = (n) => (n > 0 ? "+" : "") + fmt(n);
+
+function standingsFor(s) {
+  if (s.live) {
+    const ok = live && live.season === s.id && live.teams;
+    return { teams: ok ? live.teams : {}, fromLive: true };
+  }
+  const teams = {};
+  s.teams.forEach((t) => (teams[t.n] = { w: t.final, l: 82 - t.final }));
+  return { teams, fromLive: false };
+}
+
+function evaluate(s) {
+  const st = standingsFor(s);
+  const rows = s.teams.map((t) => {
+    const x = st.teams[t.n];
+    const w = x ? Number(x.w) : NaN;
+    const l = x ? Number(x.l) : NaN;
+    const gp = w + l;
+    const proj = gp > 0 ? (82 * w) / gp : null;
+    const side = proj === null || proj === t.line ? null : proj > t.line ? "O" : "U";
+    return { t, w, l, gp: gp > 0 ? gp : 0, proj, side, margin: proj === null ? null : proj - t.line };
+  });
+  const people = s.people.map((name, i) => {
+    let correct = 0, locks = 0, locksRight = 0;
+    rows.forEach((r) => {
+      const p = r.t.picks[i];
+      const lock = p.length > 1;
+      if (lock) locks++;
+      if (r.side && p[0] === r.side) {
+        correct++;
+        if (lock) locksRight++;
+      }
+    });
+    const bonus = locks ? (locksRight / locks) * 5 : 0;
+    return { name, correct, locks, locksRight, total: correct + bonus };
+  });
+  const done = rows.every((r) => r.gp >= 82);
+  return { rows, people, st, done };
+}
+
+function rankOf(sorted, p) {
+  return sorted.findIndex((q) => Math.abs(q.total - p.total) < 1e-9) + 1;
+}
+
+function renderBoard(people, done) {
+  const sorted = [...people].sort((a, b) => b.total - a.total);
+  const el = $("board");
+  el.textContent = "";
+  sorted.forEach((p) => {
+    const row = document.createElement("div");
+    row.className = "row";
+    const pct = (p.total / 35) * 100;
+    row.innerHTML =
+      '<div class="rank"></div><div class="name"></div><div class="score"></div>' +
+      '<div class="detail"></div><div class="bar" role="img"><i></i></div>';
+    row.children[0].textContent = rankOf(sorted, p);
+    row.children[1].textContent = p.name;
+    row.children[2].innerHTML = fmt(p.total) + ' <small>/ 35</small>';
+    row.children[3].textContent =
+      p.correct + " of 30 " + (done ? "correct" : "on track") + ", " + p.locksRight + " of " + p.locks + " sure things, " + fmt(pct) + "% of the maximum";
+    row.children[4].setAttribute("aria-label", p.name + " " + fmt(p.total) + " out of 35");
+    row.children[4].firstChild.style.width = Math.max(0, Math.min(100, pct)) + "%";
+    el.appendChild(row);
+  });
+}
+
+function chip(pick, side) {
+  const lock = pick.length > 1;
+  const label = (lock ? '<span class="lock">$</span> ' : "") + (pick[0] === "O" ? "Over" : "Under");
+  if (!side) return '<span class="chip na">' + label + "</span>";
+  const ok = pick[0] === side;
+  return '<span class="chip ' + (ok ? "ok" : "bad") + '">' + label + " " + (ok ? "&#10003;" : "&#10007;") + "</span>";
+}
+
+function renderGrid(rows, names) {
+  const list = [...rows];
+  if (sortKey === "margin") {
+    list.sort((a, b) => (b.margin ?? -999) - (a.margin ?? -999));
+  } else {
+    list.sort((a, b) => a.t.n.localeCompare(b.t.n));
+  }
+  let h = "<thead><tr><th>Team</th><th class='num'>Line</th><th class='num'>Record</th><th class='num'>Projected</th><th class='num'>vs line</th>";
+  names.forEach((p) => (h += "<th></th>"));
+  h += "</tr></thead><tbody>";
+  list.forEach((r) => {
+    const has = r.proj !== null;
+    h += "<tr><td class='team'>" + r.t.n + "</td><td class='num'>" + r.t.line.toFixed(1) + "</td>";
+    h += "<td class='num'>" + (has ? r.w + "-" + r.l : "n/a") + "</td>";
+    h += "<td class='num'>" + (has ? fmt(r.proj) : "n/a") + "</td>";
+    h += "<td class='num'>" + (has ? signed(r.margin) : "n/a") + "</td>";
+    r.t.picks.forEach((p) => (h += "<td>" + chip(p, r.side) + "</td>"));
+    h += "</tr>";
+  });
+  const g = $("grid");
+  g.innerHTML = h + "</tbody>";
+  const ths = g.querySelectorAll("thead th");
+  names.forEach((p, i) => (ths[5 + i].textContent = p));
+}
+
+function when(iso) {
+  const d = new Date(iso);
+  if (isNaN(d)) return iso;
+  return d.toLocaleString(undefined, { weekday: "short", day: "numeric", month: "short", hour: "numeric", minute: "2-digit" });
+}
+
+function render() {
+  if (!cur) return;
+  const ev = evaluate(cur);
+  renderBoard(ev.people, ev.done);
+  renderGrid(ev.rows, cur.people);
+  const bits = ["Season " + cur.id];
+  if (ev.st.fromLive) {
+    const played = ev.rows.reduce((a, r) => a + r.gp, 0);
+    const ok = live && live.season === cur.id;
+    $("mode").textContent = ev.done ? "Final results" : ok && live.mode === "practice" ? "Practice run" : "Live";
+    if (!ok || played === 0) bits.push("no games recorded yet");
+    else {
+      const stamp = live.updatedAt ? when(live.updatedAt) : live.asOf;
+      if (stamp) bits.push("updated " + stamp);
+      if (live.source) bits.push(live.source);
+    }
+  } else {
+    $("mode").textContent = "Final results";
+    bits.push("final win totals");
+  }
+  $("status").textContent = bits.join(", ");
+  $("live-note").hidden = !(cur.live && !ev.done);
+}
+
+function setSort(k) {
+  sortKey = k;
+  $("s-team").setAttribute("aria-pressed", String(k === "team"));
+  $("s-margin").setAttribute("aria-pressed", String(k === "margin"));
+  render();
+}
+$("s-team").addEventListener("click", () => setSort("team"));
+$("s-margin").addEventListener("click", () => setSort("margin"));
+
+function init(seasons) {
+  SEASONS = seasons;
+  cur = SEASONS[0];
+  const sel = $("season");
+  sel.textContent = "";
+  SEASONS.forEach((s) => {
+    const o = document.createElement("option");
+    o.value = s.id;
+    o.textContent = s.id;
+    sel.appendChild(o);
+  });
+  sel.onchange = () => {
+    cur = SEASONS.find((s) => s.id === sel.value) || SEASONS[0];
+    render();
+  };
+  render();
+}
+
+async function loadStandings() {
+  try {
+    const r = await fetch("data/standings.json?t=" + Date.now(), { cache: "no-store" });
+    if (r.ok) live = await r.json();
+  } catch (e) {}
+}
+(async () => {
+  try {
+    const r = await fetch("data/seasons.json?t=" + Date.now(), { cache: "no-store" });
+    if (!r.ok) throw new Error("seasons " + r.status);
+    const seasons = await r.json();
+    await loadStandings();
+    init(seasons);
+    setInterval(async () => { await loadStandings(); render(); }, 10 * 60 * 1000);
+  } catch (e) {
+    $("status").textContent = "Could not load the data. Try refreshing the page.";
+    $("mode").textContent = "Error";
+  }
+})();
+</script>

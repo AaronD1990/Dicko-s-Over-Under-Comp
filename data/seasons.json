@@ -1,0 +1,1089 @@
+[
+ {
+  "id": "2026-27",
+  "live": true,
+  "people": [
+   "Bill",
+   "Zach",
+   "House",
+   "Cal",
+   "JD",
+   "Will",
+   "Dicko"
+  ],
+  "teams": [
+   {
+    "n": "Atlanta",
+    "line": 43.5,
+    "picks": [
+     "U",
+     "U$",
+     "O",
+     "U",
+     "U",
+     "U",
+     "O"
+    ]
+   },
+   {
+    "n": "Boston",
+    "line": 51.5,
+    "picks": [
+     "O$",
+     "O",
+     "O$",
+     "O$",
+     "U",
+     "U",
+     "U"
+    ]
+   },
+   {
+    "n": "Brooklyn",
+    "line": 24.5,
+    "picks": [
+     "U",
+     "U",
+     "U",
+     "U$",
+     "O",
+     "O",
+     "U"
+    ]
+   },
+   {
+    "n": "Charlotte",
+    "line": 37.5,
+    "picks": [
+     "O",
+     "U",
+     "U",
+     "O",
+     "U",
+     "U",
+     "U"
+    ]
+   },
+   {
+    "n": "Chicago",
+    "line": 29.5,
+    "picks": [
+     "U",
+     "U",
+     "U$",
+     "U",
+     "U",
+     "U",
+     "O"
+    ]
+   },
+   {
+    "n": "Cleveland",
+    "line": 48.5,
+    "picks": [
+     "O",
+     "O$",
+     "O",
+     "U",
+     "U",
+     "O",
+     "U"
+    ]
+   },
+   {
+    "n": "Dallas",
+    "line": 33.5,
+    "picks": [
+     "O",
+     "U",
+     "O",
+     "U",
+     "U",
+     "O",
+     "U"
+    ]
+   },
+   {
+    "n": "Denver",
+    "line": 48.5,
+    "picks": [
+     "O",
+     "U",
+     "O",
+     "O$",
+     "O",
+     "O",
+     "O"
+    ]
+   },
+   {
+    "n": "Detroit",
+    "line": 47.5,
+    "picks": [
+     "U",
+     "O$",
+     "O",
+     "O",
+     "O$",
+     "O$",
+     "O"
+    ]
+   },
+   {
+    "n": "Golden State",
+    "line": 36.5,
+    "picks": [
+     "U$",
+     "U",
+     "U",
+     "U",
+     "O",
+     "O",
+     "U$"
+    ]
+   },
+   {
+    "n": "Houston",
+    "line": 48.5,
+    "picks": [
+     "O$",
+     "O$",
+     "O$",
+     "O",
+     "O",
+     "O$",
+     "O"
+    ]
+   },
+   {
+    "n": "Indiana",
+    "line": 44.5,
+    "picks": [
+     "O$",
+     "O",
+     "O$",
+     "U",
+     "U",
+     "U",
+     "O"
+    ]
+   },
+   {
+    "n": "LA Clips",
+    "line": 27.5,
+    "picks": [
+     "U",
+     "U",
+     "U$",
+     "O",
+     "U$",
+     "U",
+     "O"
+    ]
+   },
+   {
+    "n": "LA Luka's",
+    "line": 45.5,
+    "picks": [
+     "O",
+     "O$",
+     "O",
+     "O",
+     "O$",
+     "U",
+     "O"
+    ]
+   },
+   {
+    "n": "Memphis",
+    "line": 30.5,
+    "picks": [
+     "O",
+     "O",
+     "O",
+     "U",
+     "U",
+     "U",
+     "U"
+    ]
+   },
+   {
+    "n": "Miami",
+    "line": 46.5,
+    "picks": [
+     "O$",
+     "O$",
+     "O",
+     "O",
+     "O$",
+     "O",
+     "O$"
+    ]
+   },
+   {
+    "n": "Milwaukee",
+    "line": 25.5,
+    "picks": [
+     "U",
+     "U",
+     "U",
+     "U",
+     "U",
+     "O",
+     "U"
+    ]
+   },
+   {
+    "n": "Minnesota",
+    "line": 46.5,
+    "picks": [
+     "O",
+     "O",
+     "U",
+     "O",
+     "O",
+     "O",
+     "O"
+    ]
+   },
+   {
+    "n": "New Orleans",
+    "line": 28.5,
+    "picks": [
+     "U",
+     "U",
+     "U",
+     "U",
+     "O",
+     "O",
+     "U$"
+    ]
+   },
+   {
+    "n": "New York",
+    "line": 51.5,
+    "picks": [
+     "U",
+     "U",
+     "U",
+     "O",
+     "O",
+     "U",
+     "U"
+    ]
+   },
+   {
+    "n": "OKC",
+    "line": 61.5,
+    "picks": [
+     "O$",
+     "O",
+     "O$",
+     "U",
+     "O",
+     "O",
+     "O"
+    ]
+   },
+   {
+    "n": "Orlando",
+    "line": 43.5,
+    "picks": [
+     "O",
+     "O",
+     "O",
+     "U",
+     "O",
+     "O",
+     "O$"
+    ]
+   },
+   {
+    "n": "Philadelphia",
+    "line": 49.5,
+    "picks": [
+     "U",
+     "U",
+     "O",
+     "U$",
+     "U$",
+     "U$",
+     "O"
+    ]
+   },
+   {
+    "n": "Phoenix",
+    "line": 38.5,
+    "picks": [
+     "U",
+     "U",
+     "O",
+     "U$",
+     "U",
+     "O",
+     "U"
+    ]
+   },
+   {
+    "n": "Portland",
+    "line": 41.5,
+    "picks": [
+     "U",
+     "U",
+     "U",
+     "O",
+     "U",
+     "U",
+     "U"
+    ]
+   },
+   {
+    "n": "Sacramento",
+    "line": 20.5,
+    "picks": [
+     "O",
+     "O",
+     "U",
+     "O",
+     "U",
+     "O",
+     "U"
+    ]
+   },
+   {
+    "n": "San Antonio",
+    "line": 60.5,
+    "picks": [
+     "O",
+     "O",
+     "O",
+     "O",
+     "U",
+     "O$",
+     "O"
+    ]
+   },
+   {
+    "n": "Toronto",
+    "line": 46.5,
+    "picks": [
+     "O",
+     "O",
+     "U",
+     "O",
+     "U",
+     "U",
+     "O$"
+    ]
+   },
+   {
+    "n": "Utah",
+    "line": 37.5,
+    "picks": [
+     "U",
+     "O",
+     "O",
+     "U",
+     "O",
+     "O",
+     "O"
+    ]
+   },
+   {
+    "n": "Washington",
+    "line": 34.5,
+    "picks": [
+     "U$",
+     "U",
+     "O",
+     "O",
+     "O",
+     "O$",
+     "O"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "2025-26",
+  "people": [
+   "Bill",
+   "Zach",
+   "House",
+   "Dicko"
+  ],
+  "teams": [
+   {
+    "n": "Atlanta",
+    "line": 47.5,
+    "picks": [
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    "final": 46
+   },
+   {
+    "n": "Boston",
+    "line": 41.5,
+    "picks": [
+     "O",
+     "U",
+     "U",
+     "O"
+    ],
+    "final": 56
+   },
+   {
+    "n": "Brooklyn",
+    "line": 20.5,
+    "picks": [
+     "U$",
+     "U",
+     "U",
+     "U"
+    ],
+    "final": 20
+   },
+   {
+    "n": "Charlotte",
+    "line": 26.5,
+    "picks": [
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    "final": 44
+   },
+   {
+    "n": "Chicago",
+    "line": 32.5,
+    "picks": [
+     "O",
+     "O",
+     "O",
+     "O$"
+    ],
+    "final": 31
+   },
+   {
+    "n": "Cleveland",
+    "line": 56.5,
+    "picks": [
+     "O",
+     "O",
+     "O",
+     "U"
+    ],
+    "final": 52
+   },
+   {
+    "n": "Dallas",
+    "line": 41.5,
+    "picks": [
+     "O$",
+     "U",
+     "O",
+     "U"
+    ],
+    "final": 26
+   },
+   {
+    "n": "Denver",
+    "line": 54.5,
+    "picks": [
+     "O$",
+     "U",
+     "O$",
+     "O"
+    ],
+    "final": 54
+   },
+   {
+    "n": "Detroit",
+    "line": 46.5,
+    "picks": [
+     "U",
+     "U",
+     "U",
+     "U"
+    ],
+    "final": 60
+   },
+   {
+    "n": "Golden State",
+    "line": 45.5,
+    "picks": [
+     "O",
+     "O$",
+     "O$",
+     "U"
+    ],
+    "final": 37
+   },
+   {
+    "n": "Houston",
+    "line": 52.5,
+    "picks": [
+     "U",
+     "U$",
+     "U",
+     "O"
+    ],
+    "final": 52
+   },
+   {
+    "n": "Indiana",
+    "line": 37.5,
+    "picks": [
+     "O",
+     "U",
+     "O",
+     "U"
+    ],
+    "final": 19
+   },
+   {
+    "n": "LA Clips",
+    "line": 47.5,
+    "picks": [
+     "O",
+     "O",
+     "O$",
+     "O"
+    ],
+    "final": 42
+   },
+   {
+    "n": "LA Luka's",
+    "line": 49.5,
+    "picks": [
+     "U",
+     "O",
+     "U",
+     "U"
+    ],
+    "final": 53
+   },
+   {
+    "n": "Memphis",
+    "line": 40.5,
+    "picks": [
+     "U",
+     "O",
+     "O",
+     "O"
+    ],
+    "final": 25
+   },
+   {
+    "n": "Miami",
+    "line": 37.5,
+    "picks": [
+     "U",
+     "O",
+     "O",
+     "U$"
+    ],
+    "final": 43
+   },
+   {
+    "n": "Milwaukee",
+    "line": 42.5,
+    "picks": [
+     "O$",
+     "O$",
+     "O$",
+     "O"
+    ],
+    "final": 32
+   },
+   {
+    "n": "Minnesota",
+    "line": 49.5,
+    "picks": [
+     "O",
+     "O$",
+     "O$",
+     "O"
+    ],
+    "final": 49
+   },
+   {
+    "n": "New Orleans",
+    "line": 30.5,
+    "picks": [
+     "O",
+     "O",
+     "O",
+     "O$"
+    ],
+    "final": 26
+   },
+   {
+    "n": "New York",
+    "line": 53.5,
+    "picks": [
+     "O",
+     "O",
+     "O$",
+     "U"
+    ],
+    "final": 53
+   },
+   {
+    "n": "OKC",
+    "line": 62.5,
+    "picks": [
+     "O",
+     "O$",
+     "O",
+     "O"
+    ],
+    "final": 64
+   },
+   {
+    "n": "Orlando",
+    "line": 50.5,
+    "picks": [
+     "U",
+     "O$",
+     "U",
+     "O"
+    ],
+    "final": 45
+   },
+   {
+    "n": "Philadelphia",
+    "line": 42.5,
+    "picks": [
+     "U",
+     "U",
+     "U",
+     "U"
+    ],
+    "final": 45
+   },
+   {
+    "n": "Phoenix",
+    "line": 32.5,
+    "picks": [
+     "U",
+     "U",
+     "O",
+     "U"
+    ],
+    "final": 45
+   },
+   {
+    "n": "Portland",
+    "line": 34.5,
+    "picks": [
+     "U",
+     "U",
+     "U",
+     "O$"
+    ],
+    "final": 42
+   },
+   {
+    "n": "Sacramento",
+    "line": 34.5,
+    "picks": [
+     "U$",
+     "U$",
+     "U",
+     "O"
+    ],
+    "final": 22
+   },
+   {
+    "n": "San Antonio",
+    "line": 44.5,
+    "picks": [
+     "O$",
+     "O",
+     "U",
+     "U"
+    ],
+    "final": 62
+   },
+   {
+    "n": "Toronto",
+    "line": 39.5,
+    "picks": [
+     "O",
+     "O$",
+     "O$",
+     "U$"
+    ],
+    "final": 46
+   },
+   {
+    "n": "Utah",
+    "line": 18.5,
+    "picks": [
+     "U",
+     "U",
+     "U",
+     "O"
+    ],
+    "final": 22
+   },
+   {
+    "n": "Washington",
+    "line": 21.5,
+    "picks": [
+     "U$",
+     "U",
+     "O",
+     "U"
+    ],
+    "final": 17
+   }
+  ]
+ },
+ {
+  "id": "2024-25",
+  "people": [
+   "Dicko",
+   "Will",
+   "Cal",
+   "JD"
+  ],
+  "teams": [
+   {
+    "n": "Atlanta",
+    "line": 36.5,
+    "picks": [
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    "final": 40
+   },
+   {
+    "n": "Boston",
+    "line": 58.5,
+    "picks": [
+     "O",
+     "O$",
+     "O$",
+     "O$"
+    ],
+    "final": 61
+   },
+   {
+    "n": "Brooklyn",
+    "line": 18.5,
+    "picks": [
+     "U",
+     "O",
+     "O",
+     "O"
+    ],
+    "final": 26
+   },
+   {
+    "n": "Charlotte",
+    "line": 29.5,
+    "picks": [
+     "U",
+     "U",
+     "U",
+     "U"
+    ],
+    "final": 19
+   },
+   {
+    "n": "Chicago",
+    "line": 27.5,
+    "picks": [
+     "O$",
+     "U",
+     "U",
+     "O$"
+    ],
+    "final": 39
+   },
+   {
+    "n": "Cleveland",
+    "line": 48.5,
+    "picks": [
+     "O",
+     "U",
+     "O$",
+     "O"
+    ],
+    "final": 64
+   },
+   {
+    "n": "Dallas",
+    "line": 49.5,
+    "picks": [
+     "O",
+     "O",
+     "O$",
+     "U"
+    ],
+    "final": 39
+   },
+   {
+    "n": "Denver",
+    "line": 50.5,
+    "picks": [
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    "final": 50
+   },
+   {
+    "n": "Detroit",
+    "line": 25.5,
+    "picks": [
+     "O",
+     "U",
+     "U",
+     "U"
+    ],
+    "final": 44
+   },
+   {
+    "n": "Golden State",
+    "line": 43.5,
+    "picks": [
+     "U$",
+     "U",
+     "U",
+     "U$"
+    ],
+    "final": 48
+   },
+   {
+    "n": "Houston",
+    "line": 43.5,
+    "picks": [
+     "O$",
+     "O",
+     "O",
+     "O"
+    ],
+    "final": 52
+   },
+   {
+    "n": "Indiana",
+    "line": 47.5,
+    "picks": [
+     "U",
+     "U",
+     "O",
+     "U"
+    ],
+    "final": 50
+   },
+   {
+    "n": "LA Clips",
+    "line": 38.5,
+    "picks": [
+     "U$",
+     "O$",
+     "U",
+     "O"
+    ],
+    "final": 50
+   },
+   {
+    "n": "LA Luka's",
+    "line": 42.5,
+    "picks": [
+     "U",
+     "U",
+     "O",
+     "U"
+    ],
+    "final": 50
+   },
+   {
+    "n": "Memphis",
+    "line": 47.5,
+    "picks": [
+     "O",
+     "O",
+     "U",
+     "U"
+    ],
+    "final": 48
+   },
+   {
+    "n": "Miami",
+    "line": 44.5,
+    "picks": [
+     "O",
+     "U$",
+     "U",
+     "O"
+    ],
+    "final": 37
+   },
+   {
+    "n": "Milwaukee",
+    "line": 50.5,
+    "picks": [
+     "U",
+     "U$",
+     "O",
+     "U"
+    ],
+    "final": 48
+   },
+   {
+    "n": "Minnesota",
+    "line": 52.5,
+    "picks": [
+     "U",
+     "O",
+     "O",
+     "U"
+    ],
+    "final": 49
+   },
+   {
+    "n": "New Orleans",
+    "line": 45.5,
+    "picks": [
+     "O",
+     "O",
+     "U",
+     "O"
+    ],
+    "final": 21
+   },
+   {
+    "n": "New York",
+    "line": 54.5,
+    "picks": [
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    "final": 51
+   },
+   {
+    "n": "OKC",
+    "line": 56.5,
+    "picks": [
+     "O",
+     "U",
+     "O$",
+     "U$"
+    ],
+    "final": 68
+   },
+   {
+    "n": "Orlando",
+    "line": 47.5,
+    "picks": [
+     "O$",
+     "O",
+     "U",
+     "U"
+    ],
+    "final": 41
+   },
+   {
+    "n": "Philadelphia",
+    "line": 52.5,
+    "picks": [
+     "U",
+     "U$",
+     "O",
+     "O"
+    ],
+    "final": 24
+   },
+   {
+    "n": "Phoenix",
+    "line": 47.5,
+    "picks": [
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    "final": 36
+   },
+   {
+    "n": "Portland",
+    "line": 21.5,
+    "picks": [
+     "O",
+     "U",
+     "U",
+     "U"
+    ],
+    "final": 36
+   },
+   {
+    "n": "Sacramento",
+    "line": 46.5,
+    "picks": [
+     "U",
+     "U",
+     "O$",
+     "O"
+    ],
+    "final": 40
+   },
+   {
+    "n": "San Antonio",
+    "line": 36.5,
+    "picks": [
+     "U",
+     "U",
+     "O",
+     "U"
+    ],
+    "final": 34
+   },
+   {
+    "n": "Toronto",
+    "line": 29.5,
+    "picks": [
+     "U",
+     "U",
+     "U",
+     "U$"
+    ],
+    "final": 30
+   },
+   {
+    "n": "Utah",
+    "line": 28.5,
+    "picks": [
+     "U",
+     "O",
+     "U",
+     "O"
+    ],
+    "final": 17
+   },
+   {
+    "n": "Washington",
+    "line": 20.5,
+    "picks": [
+     "U",
+     "O",
+     "U",
+     "O"
+    ],
+    "final": 18
+   }
+  ]
+ }
+]
