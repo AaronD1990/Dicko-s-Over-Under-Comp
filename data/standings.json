@@ -1,7 +1,7 @@
 {
  "season": "2026-27",
  "mode": "live",
- "updatedAt": "2026-10-22T04:49:47Z",
+ "updatedAt": "2026-10-22T06:06:01Z",
  "source": "ESPN",
  "teams": {
   "Atlanta": {
@@ -53,7 +53,7 @@
    "l": 0
   },
   "LA Clips": {
-   "w": 0,
+   "w": 1,
    "l": 0
   },
   "LA Luka's": {
@@ -106,7 +106,7 @@
   },
   "Sacramento": {
    "w": 0,
-   "l": 0
+   "l": 1
   },
   "San Antonio": {
    "w": 0,
