@@ -1,7 +1,7 @@
 {
  "season": "2026-27",
  "mode": "live",
- "updatedAt": "2026-10-23T02:50:35Z",
+ "updatedAt": "2026-10-23T04:49:21Z",
  "source": "ESPN",
  "teams": {
   "Atlanta": {
@@ -34,7 +34,7 @@
   },
   "Denver": {
    "w": 0,
-   "l": 0
+   "l": 1
   },
   "Detroit": {
    "w": 1,
@@ -85,7 +85,7 @@
    "l": 1
   },
   "OKC": {
-   "w": 1,
+   "w": 2,
    "l": 0
   },
   "Orlando": {
