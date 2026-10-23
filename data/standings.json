@@ -1,7 +1,7 @@
 {
  "season": "2026-27",
  "mode": "live",
- "updatedAt": "2026-10-22T06:06:01Z",
+ "updatedAt": "2026-10-23T02:50:35Z",
  "source": "ESPN",
  "teams": {
   "Atlanta": {
@@ -26,7 +26,7 @@
   },
   "Cleveland": {
    "w": 0,
-   "l": 0
+   "l": 1
   },
   "Dallas": {
    "w": 0,
@@ -93,7 +93,7 @@
    "l": 1
   },
   "Philadelphia": {
-   "w": 1,
+   "w": 2,
    "l": 0
   },
   "Phoenix": {
