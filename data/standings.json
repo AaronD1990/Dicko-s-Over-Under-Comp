@@ -1,7 +1,7 @@
 {
  "season": "2026-27",
  "mode": "live",
- "updatedAt": "2026-10-24T04:47:37Z",
+ "updatedAt": "2026-10-24T06:59:40Z",
  "source": "ESPN",
  "teams": {
   "Atlanta": {
@@ -42,7 +42,7 @@
   },
   "Golden State": {
    "w": 0,
-   "l": 1
+   "l": 2
   },
   "Houston": {
    "w": 2,
@@ -61,7 +61,7 @@
    "l": 0
   },
   "Memphis": {
-   "w": 1,
+   "w": 2,
    "l": 0
   },
   "Miami": {
