@@ -1,7 +1,7 @@
 {
  "season": "2026-27",
  "mode": "live",
- "updatedAt": "2026-10-24T02:48:38Z",
+ "updatedAt": "2026-10-24T04:47:37Z",
  "source": "ESPN",
  "teams": {
   "Atlanta": {
@@ -45,7 +45,7 @@
    "l": 1
   },
   "Houston": {
-   "w": 1,
+   "w": 2,
    "l": 0
   },
   "Indiana": {
@@ -54,10 +54,10 @@
   },
   "LA Clips": {
    "w": 1,
-   "l": 0
+   "l": 1
   },
   "LA Luka's": {
-   "w": 1,
+   "w": 2,
    "l": 0
   },
   "Memphis": {
@@ -78,7 +78,7 @@
   },
   "New Orleans": {
    "w": 0,
-   "l": 1
+   "l": 2
   },
   "New York": {
    "w": 0,
@@ -101,23 +101,23 @@
    "l": 1
   },
   "Portland": {
-   "w": 1,
+   "w": 2,
    "l": 0
   },
   "Sacramento": {
    "w": 0,
-   "l": 1
+   "l": 2
   },
   "San Antonio": {
    "w": 0,
-   "l": 1
+   "l": 2
   },
   "Toronto": {
    "w": 2,
    "l": 0
   },
   "Utah": {
-   "w": 0,
+   "w": 1,
    "l": 1
   },
   "Washington": {
