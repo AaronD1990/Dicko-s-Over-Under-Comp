@@ -1,12 +1,12 @@
 {
  "season": "2026-27",
  "mode": "live",
- "updatedAt": "2026-10-25T02:48:57Z",
+ "updatedAt": "2026-10-25T04:49:17Z",
  "source": "ESPN",
  "teams": {
   "Atlanta": {
    "w": 2,
-   "l": 0
+   "l": 1
   },
   "Boston": {
    "w": 1,
@@ -33,7 +33,7 @@
    "l": 2
   },
   "Denver": {
-   "w": 0,
+   "w": 1,
    "l": 1
   },
   "Detroit": {
@@ -42,10 +42,10 @@
   },
   "Golden State": {
    "w": 0,
-   "l": 2
+   "l": 3
   },
   "Houston": {
-   "w": 2,
+   "w": 3,
    "l": 0
   },
   "Indiana": {
@@ -78,7 +78,7 @@
   },
   "New Orleans": {
    "w": 0,
-   "l": 2
+   "l": 3
   },
   "New York": {
    "w": 0,
@@ -97,7 +97,7 @@
    "l": 0
   },
   "Phoenix": {
-   "w": 0,
+   "w": 1,
    "l": 1
   },
   "Portland": {
