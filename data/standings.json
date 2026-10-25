@@ -1,7 +1,7 @@
 {
  "season": "2026-27",
  "mode": "live",
- "updatedAt": "2026-10-24T06:59:40Z",
+ "updatedAt": "2026-10-25T00:57:22Z",
  "source": "ESPN",
  "teams": {
   "Atlanta": {
@@ -17,7 +17,7 @@
    "l": 1
   },
   "Charlotte": {
-   "w": 1,
+   "w": 2,
    "l": 1
   },
   "Chicago": {
@@ -66,7 +66,7 @@
   },
   "Miami": {
    "w": 0,
-   "l": 2
+   "l": 3
   },
   "Milwaukee": {
    "w": 0,
