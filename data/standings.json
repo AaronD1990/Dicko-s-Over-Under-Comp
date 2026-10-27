@@ -1,7 +1,7 @@
 {
  "season": "2026-27",
  "mode": "live",
- "updatedAt": "2026-10-26T04:52:23Z",
+ "updatedAt": "2026-10-27T02:50:17Z",
  "source": "ESPN",
  "teams": {
   "Atlanta": {
@@ -9,7 +9,7 @@
    "l": 1
   },
   "Boston": {
-   "w": 1,
+   "w": 2,
    "l": 1
   },
   "Brooklyn": {
@@ -17,19 +17,19 @@
    "l": 3
   },
   "Charlotte": {
-   "w": 2,
+   "w": 3,
    "l": 1
   },
   "Chicago": {
    "w": 1,
-   "l": 2
+   "l": 3
   },
   "Cleveland": {
-   "w": 1,
+   "w": 2,
    "l": 1
   },
   "Dallas": {
-   "w": 1,
+   "w": 2,
    "l": 2
   },
   "Denver": {
@@ -50,7 +50,7 @@
   },
   "Indiana": {
    "w": 2,
-   "l": 1
+   "l": 2
   },
   "LA Clips": {
    "w": 1,
@@ -66,15 +66,15 @@
   },
   "Miami": {
    "w": 0,
-   "l": 3
+   "l": 4
   },
   "Milwaukee": {
-   "w": 0,
+   "w": 1,
    "l": 3
   },
   "Minnesota": {
    "w": 3,
-   "l": 0
+   "l": 1
   },
   "New Orleans": {
    "w": 0,
@@ -85,7 +85,7 @@
    "l": 3
   },
   "OKC": {
-   "w": 3,
+   "w": 4,
    "l": 0
   },
   "Orlando": {
@@ -98,7 +98,7 @@
   },
   "Phoenix": {
    "w": 1,
-   "l": 1
+   "l": 2
   },
   "Portland": {
    "w": 2,
@@ -122,7 +122,7 @@
   },
   "Washington": {
    "w": 2,
-   "l": 1
+   "l": 2
   }
  }
 }
