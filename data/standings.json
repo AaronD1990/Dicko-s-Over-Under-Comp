@@ -1,7 +1,7 @@
 {
  "season": "2026-27",
  "mode": "live",
- "updatedAt": "2026-10-29T03:00:41Z",
+ "updatedAt": "2026-10-29T05:00:21Z",
  "source": "ESPN",
  "teams": {
   "Atlanta": {
@@ -29,7 +29,7 @@
    "l": 1
   },
   "Dallas": {
-   "w": 2,
+   "w": 3,
    "l": 2
   },
   "Denver": {
@@ -86,7 +86,7 @@
   },
   "OKC": {
    "w": 4,
-   "l": 0
+   "l": 1
   },
   "Orlando": {
    "w": 1,
@@ -109,7 +109,7 @@
    "l": 4
   },
   "San Antonio": {
-   "w": 2,
+   "w": 3,
    "l": 2
   },
   "Toronto": {
@@ -118,7 +118,7 @@
   },
   "Utah": {
    "w": 1,
-   "l": 3
+   "l": 4
   },
   "Washington": {
    "w": 2,
