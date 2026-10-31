@@ -1,7 +1,7 @@
 {
  "season": "2026-27",
  "mode": "live",
- "updatedAt": "2026-10-31T04:57:28Z",
+ "updatedAt": "2026-10-31T22:49:23Z",
  "source": "ESPN",
  "teams": {
   "Atlanta": {
@@ -101,7 +101,7 @@
    "l": 3
   },
   "Portland": {
-   "w": 3,
+   "w": 4,
    "l": 1
   },
   "Sacramento": {
@@ -118,7 +118,7 @@
   },
   "Utah": {
    "w": 1,
-   "l": 4
+   "l": 5
   },
   "Washington": {
    "w": 3,
