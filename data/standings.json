@@ -1,7 +1,7 @@
 {
  "season": "2026-27",
  "mode": "live",
- "updatedAt": "2026-11-07T05:04:16Z",
+ "updatedAt": "2026-11-07T07:19:26Z",
  "source": "ESPN",
  "teams": {
   "Atlanta": {
@@ -57,7 +57,7 @@
    "l": 7
   },
   "LA Luka's": {
-   "w": 7,
+   "w": 8,
    "l": 2
   },
   "Memphis": {
@@ -102,14 +102,14 @@
   },
   "Portland": {
    "w": 6,
-   "l": 1
+   "l": 2
   },
   "Sacramento": {
    "w": 1,
-   "l": 7
+   "l": 8
   },
   "San Antonio": {
-   "w": 6,
+   "w": 7,
    "l": 2
   },
   "Toronto": {
