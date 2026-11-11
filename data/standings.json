@@ -1,7 +1,7 @@
 {
  "season": "2026-27",
  "mode": "live",
- "updatedAt": "2026-11-10T07:28:50Z",
+ "updatedAt": "2026-11-11T03:04:55Z",
  "source": "ESPN",
  "teams": {
   "Atlanta": {
@@ -70,7 +70,7 @@
   },
   "Milwaukee": {
    "w": 1,
-   "l": 9
+   "l": 10
   },
   "Minnesota": {
    "w": 8,
@@ -81,7 +81,7 @@
    "l": 7
   },
   "New York": {
-   "w": 5,
+   "w": 6,
    "l": 4
   },
   "OKC": {
