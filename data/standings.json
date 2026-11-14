@@ -1,7 +1,7 @@
 {
  "season": "2026-27",
  "mode": "live",
- "updatedAt": "2026-11-13T05:15:55Z",
+ "updatedAt": "2026-11-14T03:03:40Z",
  "source": "ESPN",
  "teams": {
   "Atlanta": {
@@ -49,7 +49,7 @@
    "l": 3
   },
   "Indiana": {
-   "w": 4,
+   "w": 5,
    "l": 8
   },
   "LA Clips": {
@@ -70,7 +70,7 @@
   },
   "Milwaukee": {
    "w": 1,
-   "l": 11
+   "l": 12
   },
   "Minnesota": {
    "w": 9,
@@ -82,14 +82,14 @@
   },
   "New York": {
    "w": 6,
-   "l": 5
+   "l": 6
   },
   "OKC": {
    "w": 8,
    "l": 4
   },
   "Orlando": {
-   "w": 4,
+   "w": 5,
    "l": 7
   },
   "Philadelphia": {
