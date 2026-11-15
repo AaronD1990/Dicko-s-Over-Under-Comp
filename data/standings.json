@@ -1,7 +1,7 @@
 {
  "season": "2026-27",
  "mode": "live",
- "updatedAt": "2026-11-15T05:10:20Z",
+ "updatedAt": "2026-11-15T20:54:25Z",
  "source": "ESPN",
  "teams": {
   "Atlanta": {
@@ -50,7 +50,7 @@
   },
   "Indiana": {
    "w": 5,
-   "l": 8
+   "l": 9
   },
   "LA Clips": {
    "w": 3,
@@ -93,7 +93,7 @@
    "l": 7
   },
   "Philadelphia": {
-   "w": 10,
+   "w": 11,
    "l": 3
   },
   "Phoenix": {
