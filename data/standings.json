@@ -1,7 +1,7 @@
 {
  "season": "2026-27",
  "mode": "live",
- "updatedAt": "2026-11-18T05:18:08Z",
+ "updatedAt": "2026-11-18T07:36:20Z",
  "source": "ESPN",
  "teams": {
   "Atlanta": {
@@ -18,7 +18,7 @@
   },
   "Charlotte": {
    "w": 4,
-   "l": 9
+   "l": 10
   },
   "Chicago": {
    "w": 3,
@@ -54,10 +54,10 @@
   },
   "LA Clips": {
    "w": 4,
-   "l": 8
+   "l": 9
   },
   "LA Luka's": {
-   "w": 12,
+   "w": 13,
    "l": 2
   },
   "Memphis": {
@@ -117,7 +117,7 @@
    "l": 9
   },
   "Utah": {
-   "w": 1,
+   "w": 2,
    "l": 13
   },
   "Washington": {
