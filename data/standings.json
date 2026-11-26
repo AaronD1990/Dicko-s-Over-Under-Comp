@@ -1,7 +1,7 @@
 {
  "season": "2026-27",
  "mode": "live",
- "updatedAt": "2026-11-26T04:10:57Z",
+ "updatedAt": "2026-11-26T13:58:07Z",
  "source": "ESPN",
  "teams": {
   "Atlanta": {
@@ -41,7 +41,7 @@
    "l": 6
   },
   "Golden State": {
-   "w": 9,
+   "w": 10,
    "l": 8
   },
   "Houston": {
@@ -101,16 +101,16 @@
    "l": 8
   },
   "Portland": {
-   "w": 11,
+   "w": 12,
    "l": 6
   },
   "Sacramento": {
    "w": 2,
-   "l": 15
+   "l": 16
   },
   "San Antonio": {
    "w": 15,
-   "l": 3
+   "l": 4
   },
   "Toronto": {
    "w": 6,
